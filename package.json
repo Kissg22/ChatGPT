@@ -1,18 +1,21 @@
 {
   "name": "mil",
   "version": "1.0.0",
-  "description": "",
+  "description": "Shopify webhook handler",
   "main": "config.js",
+  "type": "commonjs",
   "scripts": {
+    "start": "node api/webhooks.js",
+    "dev": "node api/webhooks.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@shopify/shopify-api": "^11.13.0",
     "express": "^5.1.0",
-    "nodemailer": "^7.0.3"
+    "nodemailer": "^7.0.3",
+    "dotenv": "^16.0.0"
   }
 }
